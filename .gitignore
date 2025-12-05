@@ -1,0 +1,33 @@
+# Build directory
+build/
+
+# C/C++ compilation files
+*.o
+*.obj
+*.so
+*.a
+*.la
+*.lo
+*.dylib
+*.dll
+*.exe
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+
+# IDE configuration files
+.vscode/
+.idea/
+*.swp
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log 
