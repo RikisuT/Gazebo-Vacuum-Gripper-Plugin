@@ -128,7 +128,7 @@ The plugin operates as a `gz::sim::System` with `PreUpdate` and `PostUpdate` hoo
 This project evolved from multiple sources:
 
 1. **Original Base**: Forked from [gazebo_ign_fortress_suction_plugin](https://github.com/pedrozambonini/gazebo_ign_fortress_suction_plugin) by Pedro Zambonini. The original plugin handled object removal (deletion).
-2. **Logic Inspiration**: The suction and attachment logic was heavily inspired by the `GazeboRosVacuumGripper` from [gazebo_ros_pkgs](https://github.com/ros-simulation/gazebo_ros_pkgs) (Gazebo Classic), adapted here for Gazebo Sim (Ignition) to use `DetachableJoint` instead of deletion.
+2. **Logic Inspiration**: The suction and attachment logic was heavily inspired by the `GazeboRosVacuumGripper` from [gazebo_ros_pkgs](https://github.com/ros-simulation/gazebo_ros_pkgs) (Gazebo Classic), adapted here for Gazebo Sim to use `DetachableJoint` instead of deletion.
 
 ## License
 
