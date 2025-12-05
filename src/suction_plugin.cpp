@@ -160,10 +160,7 @@ void SuctionPlugin::PreUpdate(const UpdateInfo &_info,
                     if (nameComp && nameComp->Data() == this->parentLinkName) { gripperLink = link; break; }
                 }
              }
-             if (gripperLink == kNullEntity) {
-                 auto links = _ecm.ChildrenByComponents(this->modelEntity, components::Link());
-                 if (!links.empty()) gripperLink = links[0];
-             }
+
 
              // Find target link
              Entity targetLink = kNullEntity;
@@ -222,11 +219,7 @@ void SuctionPlugin::FindTargetRadius(EntityComponentManager &_ecm)
             if (nameComp && nameComp->Data() == this->parentLinkName) { gripperLink = link; break; }
         }
     }
-    if (gripperLink == kNullEntity)
-    {
-        auto links = _ecm.ChildrenByComponents(this->modelEntity, components::Link());
-        if (!links.empty()) gripperLink = links[0];
-    }
+
 
     if (gripperLink == kNullEntity) return;
 
@@ -317,11 +310,7 @@ void SuctionPlugin::FindTargetContact(const EntityComponentManager &_ecm)
             if (nameComp && nameComp->Data() == this->parentLinkName) { gripperLink = link; break; }
         }
     }
-    if (gripperLink == kNullEntity)
-    {
-        auto links = _ecm.ChildrenByComponents(this->modelEntity, components::Link());
-        if (!links.empty()) gripperLink = links[0];
-    }
+
 
     if (gripperLink == kNullEntity) return;
 
